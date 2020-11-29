@@ -1,0 +1,259 @@
+body{
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+img{
+	max-width: 100%;
+}
+.fejlec{
+	border: none;
+	color: white;
+	font-size: 50px;
+	background: #000000;
+	margin: 0;
+	text-align: center;
+	padding: 20px;
+	font-family: 'Playfair Display', serif;
+	letter-spacing: 20px;
+	word-break: break-word;
+}
+
+@media only screen and (min-width: 800px){
+.fejlec{
+	border: none;
+	color: white;
+	font-size: 70px;
+	background: #000000;
+	margin: 0;
+	text-align: center;
+	padding: 20px;
+	font-family: 'Playfair Display', serif;
+	letter-spacing: 20px;
+}
+}
+.bemutatkozas{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	padding-bottom: 0;
+	letter-spacing: 0px;
+
+	color: white;
+	background: #000000;
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+/*-----------home------------*/
+	.home{
+		float: left;
+		display: inline-block;
+		padding: 6px 0 6px 16px;
+		margin: 5px;
+		vertical-align: middle;
+		font-size: 36px;
+	}
+
+
+/*----------NAVIGÁCIÓ--------------*/
+#navigation{
+	display: grid;
+	grid-template-columns: 1fr;
+	border-bottom: solid black;
+	text-align: center;
+
+}
+
+@media only screen and (min-width: 800px){
+
+	#navigation{
+		display: grid;
+		grid-template-columns: minmax(min-content, 10rem) auto auto auto auto auto auto;
+
+		border-bottom: solid black;
+		text-align: center;	
+	}
+}
+
+.navok{
+	display: inline-block;
+	padding: 16px;
+	margin: 5px;
+	cursor: pointer;
+	}
+a:link{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:visited{
+	color: black;
+}
+
+/*--------SZÖVEG------------*/
+#leiras{
+	padding: 0.6rem 2rem 3rem 2rem;
+	background-image: url(portfolio/0hatter.jpg);
+  	background-size: 100%;
+  	background-repeat: 2;
+
+	background-image: 
+	    linear-gradient(
+	      rgba(0, 0, 0, 0.45),
+	      rgba(0, 0, 0, 0.45)
+	  	),
+	    url(portfolio/0hatter.jpg);
+
+
+
+  	margin: 0;
+	
+	text-align: center;
+	text-align: justify;
+	color: white;
+}
+
+
+@media only screen and (min-width: 800px){
+#leiras{
+  	background-image: url(portfolio/0hatter.jpg);
+  	background-size: 100%;
+  	background-repeat: 2;
+
+	background-image: 
+	    linear-gradient(
+	      rgba(0, 0, 0, 0.45),
+	      rgba(0, 0, 0, 0.45)
+	  	),
+	    url(portfolio/0hatter.jpg);
+
+
+
+  	margin: 0;
+	padding: 0.6rem 10rem 3rem 10rem;
+	text-align: center;
+	text-align: justify;
+	color: white;
+}
+}
+
+
+
+/*-------HASÁBOK--------*/
+.hasabok{
+	display: grid;
+	grid-template-areas: "hasab" "hasab";
+	grid-template-columns: 1fr;
+	/*flex-wrap: wrap;*/
+}
+
+@media only screen and (min-width: 800px){
+.hasabok{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+}
+
+
+.hasab{
+	grid-area: "hasab";
+	/*flex: 50%;*/
+	margin: 2rem;
+	margin-top: 2rem;
+	text-align: center;
+	text-align: justify;
+}
+@media only screen and (min-width: 800px){
+.hasab{
+	grid-area: "hasab";
+	/*flex: 50%;*/
+	margin: 6rem;
+	margin-top: 2rem;
+	text-align: center;
+	text-align: justify;
+}
+}
+
+.kartyak{
+	
+	margin: 3rem;
+	max-width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+
+.kepfelirat{
+	padding: 1rem;
+	text-align: center;		
+}
+.kartyak:hover{
+	border: 1px solid black;
+}
+
+
+
+
+
+.vissza{
+	text-align:right;
+	text-decoration: underline;
+	margin: 2rem;
+	padding-right: 2rem;
+	cursor: pointer;
+}
+a:visited{
+	color: black;
+	text-decoration: underline;
+	}
+
+
+/*--------LÁBLÉC---------*/
+.lablec{
+	display: grid;
+	grid-template-columns: 1fr;
+
+	font-style: italic;
+	color: white;
+	font-size: 1rem;
+	background-color: black;
+	padding: 3rem	;
+	margin-top: 5rem;
+	padding-left: 5rem;
+}
+.idezet{
+	width: 100%;
+	margin-bottom: 3rem;
+}
+.en{
+	line-height: 1.5;
+}
+
+@media only screen and (min-width: 800px){
+
+.lablec{
+	display: grid;
+	grid-template-columns: auto auto;
+
+	font-style: italic;
+	color: white;
+	font-size: 1rem;
+	background-color: black;
+	padding: 3rem	;
+	margin-top: 5rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+.idezet{
+	width: 30%;
+}
+.en{
+	line-height: 1.5;
+	text-align: right;
+}
+}
